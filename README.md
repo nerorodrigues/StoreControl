@@ -12,19 +12,25 @@ Give examples
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+After clone the repository into your machine you should have the following folder structure
 
-Say what the step will be
-
+``` 
+|
+|_StoreControl.Infrastructure 
+|
+|_StoreControl.Shared 
+|
+|_StoreControl 
+|
+|_StoreControlWeb
 ```
-Give the example
-```
 
-In the StoreControlWeb directory install the node_modules 
+Inside of the StoreControlWeb directory install the node_modules 
 
 ```
 npm install
 ```
+
 
 
 And repeat
