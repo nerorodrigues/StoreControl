@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <Reference Include="Utils.Infrastructure">
-      <HintPath>..\..\..\..\source\repos\Utils\Infrastructure\bin\Debug\netstandard2.0\Utils.Infrastructure.dll</HintPath>
+      <HintPath>..\Libraries\Infrastructure\bin\Debug\netstandard2.0\Utils.Infrastructure.dll</HintPath>
     </Reference>
   </ItemGroup>
 
