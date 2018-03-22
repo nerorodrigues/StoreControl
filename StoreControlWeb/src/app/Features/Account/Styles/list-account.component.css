@@ -1,0 +1,30 @@
+tr:nth-child(even){
+    background: #C5C5C5;
+}
+tr:nth-child(odd){
+    background: #BEBEBE;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* th, td {
+    text-align: left;
+    padding: 8px;
+} */
+td.last{
+    width: 1px;
+    padding: 5px;
+    white-space: nowrap;
+}
+
+tr:hover{
+    background: #3A3737;
+    color: white;
+}
+
+col-small-1{
+    width: calc(100%/24);
+}

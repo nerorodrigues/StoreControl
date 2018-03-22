@@ -1,0 +1,28 @@
+<h3>{{title}}</h3>
+
+<form class="form" (ngSubmit)="onSubmit()" #ngForm="ngForm">
+    <div class="row">
+        <label class="col-3" for="description">Description</label>
+        <input type="text" id="description" [(ngModel)]="purchase.Description" name="description" #name="ngModel">
+    </div>
+    <div class="row">
+        <label class="col-3" for="description">Customer Account</label>
+        <div class="dropdown">
+            <input id="customerAccountFilter" type="text" [(ngModel)]="customerAccountSelected.Name" (input)="searchCustomerAccount()"
+                name="customerAccountFilter" #name="ngModel" autocomplete="off">
+            <div [class.visible]="isVisible" class="dropdown-content">
+                <div class="dropdown-item" *ngFor="let customerAccount of customerAccounts" (click)="selectCustomerAccount(customerAccount)">
+                    {{customerAccount.Name}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <label class="col-3" for="name">Ammount</label>
+        <input type="text" id="name" [(ngModel)]="purchase.Amount" name="name" #name="ngModel">
+    </div>
+    <div class="left">
+        <button type="submit" class="btn">Save</button>
+        <button type="submit" class="btn" (click)="cancel()">Cancel</button>
+    </div>
+</form>

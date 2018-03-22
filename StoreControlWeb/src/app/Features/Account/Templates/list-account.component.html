@@ -1,0 +1,30 @@
+<h3>Detail Account</h3>
+
+<div class="col-12" style="overflow-x: auto;">
+    <table>
+        <thead>
+            <td>
+                Name
+            </td>
+            <td>
+                CPF
+            </td>
+        </thead>
+        <tbody>
+            <tr *ngFor="let customerAccount of customerAccounts">
+                <td>
+                    {{customerAccount.Name}}
+                </td>
+                <td>
+                    {{customerAccount.CPF | cpfFormat}}
+                </td>
+                <td class="last">
+                    <a class="btn" routerLink="../edit/{{customerAccount.ID}}">Update</a>
+                </td>
+                <td class="last">
+                    <a class="btn red" routerLink="../delete/{{customerAccount.ID}}">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

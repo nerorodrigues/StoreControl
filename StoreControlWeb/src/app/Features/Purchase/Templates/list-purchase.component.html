@@ -1,0 +1,42 @@
+<h3>Detail Account</h3>
+
+<div class="col-12" style="overflow-x: auto;">
+    <table>
+        <thead>
+            <td>
+                Description
+            </td>
+            <td>
+                Name
+            </td>
+            <td>
+                CPF
+            </td>
+            <td>
+                Ammount
+            </td>
+        </thead>
+        <tbody>
+            <tr *ngFor="let purchase of purchases">
+                <td>
+                    {{purchase.Description}}
+                </td>
+                <td>
+                    {{purchase.CustomerAccount.Name}}
+                </td>
+                <td>
+                    {{purchase.CustomerAccount.CPF}}
+                </td>
+                <td>
+                    {{purchase.Amount}}
+                </td>
+                <td class="last">
+                    <a class="btn" routerLink="../edit/{{purchase.ID}}">Update</a>
+                </td>
+                <td class="last">
+                    <a class="btn red" routerLink="../delete/{{purchase.ID}}">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

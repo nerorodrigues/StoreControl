@@ -1,0 +1,16 @@
+<h3>{{title}}</h3>
+
+<form class="form" (ngSubmit)="onSubmit()" #ngForm="ngForm">
+    <div class="row">
+        <label class="col-2" for="name">Name</label>
+        <input type="text" id="name" [(ngModel)]="customerAccount.Name" name="name" #name="ngModel">
+    </div>
+    <div class="row">
+        <label class="col-2" for="cpf">CPF</label>
+        <input type="text" id="cpf" [(ngModel)]="customerAccount.CPF" name="cpf" #name="ngModel">
+    </div>
+    <div class="left">
+        <button type="submit" class="btn">Save</button>
+        <button type="submit" class="btn" (click)="cancel()">Cancel</button>
+    </div>
+</form>
