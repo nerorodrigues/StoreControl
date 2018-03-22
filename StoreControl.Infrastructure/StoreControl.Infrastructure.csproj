@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Database\Migrations\20180321225415_V201803211954.cs" />
+    <Compile Remove="Database\Migrations\20180321225925_V201803211959.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StoreControl.Shared\StoreControl.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Utils.Infrastructure">
+      <HintPath>..\..\..\..\source\repos\Utils\Infrastructure\bin\Debug\netstandard2.0\Utils.Infrastructure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

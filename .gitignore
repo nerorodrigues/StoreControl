@@ -3,3 +3,10 @@
 ################################################################################
 
 /node_modules
+/StoreControl/bin/Debug/netcoreapp2.0
+/.vs/StoreControl/v15/Server/sqlite3
+/StoreControl/obj
+/StoreControl.Infrastructure/bin/Debug/netcoreapp2.0
+/StoreControl.Infrastructure/obj
+/StoreControl.Shared/bin/Debug/netcoreapp2.0
+/StoreControl.Shared/obj
